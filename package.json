@@ -1,12 +1,14 @@
 {
-  "name": "admin-dashboard-template-dashwind",
+  "name": "admin-demo",
   "version": "1.0.0",
   "description": "Admin Dashboard template built with create-react-app, tailwind css and daisy UI. Template uses rich tailwind css utility classes and have components of daisy UI, also have redux toolkit implemented for store management.",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.13",
@@ -19,6 +21,7 @@
     "chart.js": "^4.0.1",
     "daisyui": "^2.41.0",
     "dayjs": "^1.11.7",
+    "gh-pages": "^6.0.0",
     "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.0.1",
@@ -33,7 +36,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/srobbin01/tailwind-dashboard-template-dashwind"
+    "url": "https://github.com/Mosha21/admin-demo"
   },
   "keywords": [
     "reactjs",
@@ -46,11 +49,7 @@
     "react-router",
     "react-charts"
   ],
-  "author": "srobbin01",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/srobbin01/tailwind-dashboard-template-dashwind/issues"
-  },
   "homepage": "",
   "eslintConfig": {
     "extends": [
